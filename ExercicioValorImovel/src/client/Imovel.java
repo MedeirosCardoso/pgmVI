@@ -8,6 +8,10 @@ public abstract class Imovel {
 	private char localizacao;
 	private ComportamentoDefinirValor valorImovel;
 
+	public Imovel() {
+
+	}
+
 	public Imovel(char localizacao, float espaco, int comodos) {
 		this.comodos = comodos;
 		this.espaco = espaco;
@@ -45,8 +49,8 @@ public abstract class Imovel {
 	public void setValorImovel(ComportamentoDefinirValor valorImovel) {
 		this.valorImovel = valorImovel;
 	}
-	
+
 	public void informarValorImovel() {
-		System.out.println(getValorImovel().definirValor());
+		System.out.println("Imovel " + getClass().getSimpleName() + ": R$" + getValorImovel().definirValor(this));
 	}
 }

@@ -1,5 +1,7 @@
 package valueBehavior;
 
+import client.Imovel;
+
 public interface ComportamentoDefinirValor {
-	public float definirValor();
+	public float definirValor(Imovel imovel);
 }
