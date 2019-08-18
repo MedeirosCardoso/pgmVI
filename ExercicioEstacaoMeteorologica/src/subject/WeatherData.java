@@ -1,12 +1,17 @@
 package subject;
 
+import java.util.ArrayList;
+
+import observers.Observer;
+
 public class WeatherData implements Subject {
 	private float temperature;
 	private float humidity;
 	private float pressure;
+	private ArrayList observers;
 
 	public WeatherData() {
-
+		observers = new ArrayList<Observer>();
 	}
 
 	public float getTemperature() {
@@ -22,7 +27,19 @@ public class WeatherData implements Subject {
 	}
 
 	public void measurementsChaged() {
+		
+	}
 
+	public void setTemperature(float temperature) {
+		this.temperature = temperature;
+	}
+
+	public void setHumidity(float humidity) {
+		this.humidity = humidity;
+	}
+
+	public void setPressure(float pressure) {
+		this.pressure = pressure;
 	}
 
 	public void setMeasurements(float temperature, float humidity, float pressure) {
@@ -33,21 +50,25 @@ public class WeatherData implements Subject {
 	}
 
 	@Override
-	public void registerObserver() {
-		// TODO Auto-generated method stub
-
+	public void registerObserver(Observer o) {
+		observers.add(o);
 	}
 
 	@Override
-	public void removeObserver() {
-		// TODO Auto-generated method stub
+	public void removeObserver(Observer o) {
+		int i = observers.indexOf(o);
+		if (i >= 0) {
+			observers.remove(i);
+		}
 
 	}
 
 	@Override
 	public void notifyObservers() {
-		// TODO Auto-generated method stub
-
+		for (int i = 0; i < observers.size(); i++) {
+			Observer observer = (Observer) observers.get(i);
+			observer.update(this);
+		}
 	}
 
 }

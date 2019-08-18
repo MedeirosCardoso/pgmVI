@@ -1,9 +1,11 @@
 package observers;
 
+import subject.WeatherData;
+
 public class ThirdPartyDisplay implements Observer, DisplayElement {
 	
 	@Override
-	public void update() {
+	public void update(WeatherData wd) {
 		// TODO Auto-generated method stub
 
 	}

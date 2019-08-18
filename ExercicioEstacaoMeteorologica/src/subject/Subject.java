@@ -1,9 +1,11 @@
 package subject;
 
-public interface Subject {
-	public void registerObserver();
+import observers.Observer;
 
-	public void removeObserver();
+public interface Subject {
+	public void registerObserver(Observer o);
+
+	public void removeObserver(Observer o);
 
 	public void notifyObservers();
 }
