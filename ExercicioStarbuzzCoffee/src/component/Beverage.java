@@ -22,4 +22,7 @@ public abstract class Beverage {
 		this.size = size;
 	}
 
+	public void mostraValor(Beverage bebida) {
+		System.out.printf("%s %s%.2f \n", bebida.getDescription(), "$", bebida.cost());
+	}
 }

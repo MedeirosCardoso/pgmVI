@@ -2,7 +2,7 @@ package component;
 
 public class HouseBlend extends Beverage {
 	public HouseBlend(char size) {
-		setDescription("House Blend Coffee");
+		setDescription("House Blend Coffee - "+size);
 		setSize(size);
 	}
 

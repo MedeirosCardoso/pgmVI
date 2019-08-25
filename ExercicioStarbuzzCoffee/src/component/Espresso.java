@@ -2,7 +2,7 @@ package component;
 
 public class Espresso extends Beverage {
 	public Espresso(char size) {
-		setDescription("Espresso coffee");
+		setDescription("Espresso coffee - "+size);
 		setSize(size);
 	}
 

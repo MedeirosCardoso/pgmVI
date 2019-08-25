@@ -2,7 +2,7 @@ package component;
 
 public class Decaf extends Beverage {
 	public Decaf(char size) {
-		setDescription("Decaf Coffee");
+		setDescription("Decaf Coffee - "+size);
 		setSize(size);
 	}
 

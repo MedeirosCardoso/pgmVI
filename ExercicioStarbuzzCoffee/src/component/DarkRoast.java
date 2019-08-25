@@ -3,7 +3,7 @@ package component;
 public class DarkRoast extends Beverage {
 
 	public DarkRoast(char size) {
-		setDescription("Dark Roast Coffee");
+		setDescription("Dark Roast Coffee - "+size);
 		setSize(size);
 	}
 
