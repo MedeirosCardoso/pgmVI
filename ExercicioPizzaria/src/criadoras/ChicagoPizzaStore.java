@@ -10,11 +10,11 @@ public class ChicagoPizzaStore extends PizzaStore {
 
 	@Override
 	protected Pizza createPizza(String type) {
-		if (type.equals("cheese")) {
+		if (type.equals("queijo")) {
 			return new ChicagoStyleCheesePizza();
-		} else if (type.equals("veggie")) {
+		} else if (type.equals("vegetariana")) {
 			return new ChicagoStyleVeggiePizza();
-		} else if (type.equals("clam")) {
+		} else if (type.equals("molusco")) {
 			return new ChicagoStyleClamPizza();
 		} else if (type.equals("pepperoni")) {
 			return new ChicagoStylePepperoniPizza();

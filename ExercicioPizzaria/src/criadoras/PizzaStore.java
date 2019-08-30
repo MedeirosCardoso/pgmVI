@@ -4,10 +4,10 @@ import produto.Pizza;
 
 public abstract class PizzaStore {
 	
-	public Pizza orderPizza(String type) {
+	public Pizza orderPizza(String tipo) {
 		Pizza pizza;
 
-		pizza = createPizza(type);
+		pizza = createPizza(tipo);
 
 		pizza.prepare();
 		pizza.bake();
@@ -17,5 +17,5 @@ public abstract class PizzaStore {
 		return pizza;
 	}
 
-	protected abstract Pizza createPizza(String type);
+	protected abstract Pizza createPizza(String tipo);
 }

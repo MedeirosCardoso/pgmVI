@@ -5,13 +5,13 @@ import produto.Pizza;
 public class ChicagoStyleVeggiePizza extends Pizza {
 
 	public ChicagoStyleVeggiePizza() {
-		setName("Chicago Style veggie Pizza");
-		setDough("Thin Crust Dough");
-		setSauce("Sauce");
-		toppings.add("Sharedded Mozzarella Cheese");
+		setName("pizza vegetariana ao estilo Chicago");
+		setDough("Massa extra fina");
+		setSauce("Molho de mostarda");
+		toppings.add("Tomate seco, mussarela, palmito");
 	}
 	
 	public void bake() {
-		System.out.print("Bake for 15 minutes at 250");
+		System.out.print("Asse por 15 minutos a 250 °C");
 	}
 }
