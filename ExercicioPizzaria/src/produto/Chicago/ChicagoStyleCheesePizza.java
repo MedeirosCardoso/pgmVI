@@ -5,14 +5,14 @@ import produto.Pizza;
 public class ChicagoStyleCheesePizza extends Pizza {
 
 	public ChicagoStyleCheesePizza() {
-		setName("Chicago Style Dep Dish Cheese Pizza");
-		setDough("Extra Thick Crust Dough");
-		setSauce("Plum Tomato Sauce");
-		toppings.add("Shredded Mozzarella Cheese");
+		setName("pizza de queijo prato estilo Chicago");
+		setDough("Massa extra grossa");
+		setSauce("Molho de tomate ameixa");
+		toppings.add("Queijo mussarela ralado");
 	}
 	
 	public void cut() {
-		System.out.print("Cutting the pizza into square slices");
+		System.out.print("Cortar a pizza em fatias quadradas");
 	}
 
 }

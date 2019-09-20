@@ -5,13 +5,13 @@ import produto.Pizza;
 public class NYStyleCheesePizza extends Pizza {
 
 	public NYStyleCheesePizza() {
-		setName("NY Style sauce and Cheese Pizza");
-		setDough("Thin Crust Dough");
-		setSauce("Marinara Sauce");
-		toppings.add("Grated Reggiano Cheese");
+		setName("pizza de queijo ao estilo NY");
+		setDough("Massa grossa");
+		setSauce("Molho marinara");
+		toppings.add("Queijo reggiano ralado");
 	}
 
 	public void box() {
-		System.out.println("Place pizza in official NY box");
+		System.out.println("Coloque a pizza na caixa oficial da loja de NY" + "\n");
 	}
 }

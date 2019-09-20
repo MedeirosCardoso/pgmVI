@@ -4,12 +4,12 @@ import produto.Pizza;
 
 public class NYStyleVeggiePizza extends Pizza{
 	public NYStyleVeggiePizza() {
-		setName("NY Style veggie Pizza");
-		setDough("Thin Crust Dough");
-		setSauce("Sauce");
-		toppings.add("Sharedded Mozzarella Cheese");
+		setName("pizza vegetariana ao estilo de NY");
+		setDough("Massa extra fina");
+		setSauce("Molho branco light");
+		toppings.add("Tomate seco, rucula");
 	}
 	public void cut() {
-		System.out.println("Cutting the pizza into square slices");
+		System.out.println("Cortar a pizza em fatias quadradas");
 	}
 }

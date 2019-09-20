@@ -5,9 +5,9 @@ import produto.Pizza;
 public class NYStylePepperoniPizza extends Pizza {
 	
 	public NYStylePepperoniPizza() {
-		setName("NY Style sauce and Pepperoni Pizza");
-		setDough("Thin Crust Dough");
-		setSauce("Marinara Sauce");
-		toppings.add("Tomato and onion");
+		setName("pizza de pepperoni estilo NY");
+		setDough("Massa fina");
+		setSauce("Molho de tomate");
+		toppings.add("Salame e calabresa");
 	}
 }

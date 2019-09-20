@@ -5,13 +5,13 @@ import produto.Pizza;
 public class ChicagoStylePepperoniPizza extends Pizza {
 
 	public ChicagoStylePepperoniPizza() {
-		setName("Chicago Style sauce and Pepperoni Pizza");
-		setDough("Thin Crust Dough");
-		setSauce("White Sauce");
-		toppings.add("Tomato and onion");
+		setName("pizza de pepperoni estilo Chicago");
+		setDough("Massa fina");
+		setSauce("Molho de tomate");
+		toppings.add("Salame italiano");
 	}
-	
+
 	public void box() {
-		System.out.print("Place pizza in official Chicago box");
+		System.out.println("Coloque a pizza na caixa oficial da loja de Chicago" + "\n");
 	}
 }
