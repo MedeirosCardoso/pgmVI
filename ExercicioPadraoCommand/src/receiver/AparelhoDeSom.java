@@ -22,6 +22,6 @@ public class AparelhoDeSom {
 	}
 
 	public void setVolume(int vol) {
-		System.out.println("Volume do aparelho de som está definido como " + vol);
+		System.out.println("O aparelho de som está com o volume definido como " + vol);
 	}
 }
