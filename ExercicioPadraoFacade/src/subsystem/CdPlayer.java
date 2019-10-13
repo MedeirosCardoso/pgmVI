@@ -9,30 +9,30 @@ public class CdPlayer {
 	}
 
 	public void on() {
-		System.out.println("Cdplayer on");
+		System.out.println("CD player on");
 	}
 
 	public void off() {
-		System.out.println("Cdplayer off");
+		System.out.println("CD player off");
 	}
 
 	public void eject() {
-		System.out.println("ejetar");
+		System.out.println("Ejetar");
 	}
 
 	public void pause() {
-		System.out.println("Cdplayer pausado");
+		System.out.println("CD player pausado");
 	}
 
 	public void play(String titulo) {
-		System.out.println("Play cd " + titulo);
+		System.out.println("Play CD " + titulo);
 	}
 
 	public void play(int posicao) {
-		System.out.println("Play cd " + posicao);
+		System.out.println("Play CD " + posicao);
 	}
 
 	public void stop() {
-		System.out.println("Cdplayer parado");
+		System.out.println("CD player parado.");
 	}
 }

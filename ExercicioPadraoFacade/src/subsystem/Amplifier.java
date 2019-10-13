@@ -11,19 +11,19 @@ public class Amplifier {
 	}
 
 	public void on() {
-		System.out.println("Amplifier on");
+		System.out.println("Amplificador on");
 	}
 
 	public void off() {
-		System.out.println("Amplifier off");
+		System.out.println("Amplificador off");
 	}
 
 	public void setCd(CdPlayer cd) {
-		System.out.println("Configurado para CD player " + cd);
+		System.out.println("Configurado para CD player ");
 	}
 
 	public void setDvd(DvdPlayer dvd) {
-		System.out.println("Configurado para DVD player " + dvd);
+		System.out.println("Configurado para DVD player ");
 	}
 
 	public void setStereoSound() {
@@ -31,11 +31,11 @@ public class Amplifier {
 	}
 
 	public void setSurroundSound() {
-		System.out.println("Definido áudio surround");
+		System.out.println("Definido áudio Surround");
 	}
 
 	public void setTuner(Tuner radio) {
-		System.out.println("Configurado para rádio " + radio);
+		System.out.println("Configurado para Rádio ");
 	}
 
 	public void setVolume(int volume) {

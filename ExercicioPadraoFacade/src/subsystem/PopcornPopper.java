@@ -7,11 +7,11 @@ public class PopcornPopper {
 	}
 
 	public void on() {
-		System.out.println("Pipoca ligada");
+		System.out.println("Pipoqueira ligada");
 	}
 
 	public void off() {
-		System.out.println("Pipoca desligada");
+		System.out.println("Pipoqueira desligada");
 	}
 
 	public void pop() {
