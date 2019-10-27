@@ -14,6 +14,7 @@ public class MaquinaDeBolinhas {
 	Estado esgotado;
 	Estado vendido;
 	Estado vencedor;
+
 	Estado estado;
 	int count = 0;
 
@@ -23,7 +24,7 @@ public class MaquinaDeBolinhas {
 		this.vendido = new Vendido(this);
 		this.esgotado = new Esgotado(this);
 		this.vencedor = new Vencedor(this);
-		
+
 		this.count = numeroBolinhas;
 		if (numeroBolinhas > 0) {
 			this.estado = this.semCredito;
@@ -44,6 +45,14 @@ public class MaquinaDeBolinhas {
 
 	public void virarManivela() {
 		estado.virarManivela();
+		estado.entregar();
+	}
+
+	public void liberarBolinha() {
+		System.out.println("Bolinha liberada");
+		if (count != 0) {
+			count -= 1;
+		}
 	}
 
 	public Estado getSemCredito() {
@@ -101,4 +110,18 @@ public class MaquinaDeBolinhas {
 	public void setCount(int count) {
 		this.count = count;
 	}
+
+	@Override
+	public String toString() {
+		String estoque = "Estoque de bolinhas: " + getCount() + " bolinhas";
+		String maq = "Maquina de Bolinhas modelo #2004 \n";
+		if (getCount() == 1) {
+			maq += estoque.substring(0, estoque.length() - 1);
+		}else {
+			maq += estoque.substring(0, estoque.length());
+		}
+
+		return getEstado() + "\n" + maq;
+	}
+
 }

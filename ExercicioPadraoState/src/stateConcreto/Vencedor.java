@@ -28,18 +28,23 @@ public class Vencedor implements Estado {
 
 	@Override
 	public void entregar() {
-		System.out.println("Duas bolinhas entregues");
-		maquinaDeBolinhas.setCount(maquinaDeBolinhas.getCount() - 2);
-		if (maquinaDeBolinhas.getCount() > 0) {
-			maquinaDeBolinhas.setEstado(maquinaDeBolinhas.getSemCredito());
-		} else {
+		System.out.println("Vencedor recebera duas bolinhas!");
+		maquinaDeBolinhas.liberarBolinha();
+		if (maquinaDeBolinhas.getCount() == 0) {
 			maquinaDeBolinhas.setEstado(maquinaDeBolinhas.getEsgotado());
+		} else {
+			maquinaDeBolinhas.liberarBolinha();
+			if (maquinaDeBolinhas.getCount() > 0) {
+				maquinaDeBolinhas.liberarBolinha();
+				maquinaDeBolinhas.setEstado(maquinaDeBolinhas.getSemCredito());
+			} else {
+				maquinaDeBolinhas.setEstado(maquinaDeBolinhas.getEsgotado());
+			}
 		}
-
 	}
 
 	@Override
 	public String toString() {
-		return "Maquina de Bolinhas realizou a entrega de duas bolinhas";
+		return "Maquina de Bolinhas realizou a entrega de duas bolinhas ao vencedor!";
 	}
 }
