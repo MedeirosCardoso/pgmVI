@@ -6,10 +6,12 @@ public class ListaDuplaIterator implements MeuIterator {
 
 	private final ListaDupla lista;
 	private NoListaDupla atual;
+	private int index;
 
 	public ListaDuplaIterator(ListaDupla lista) {
 		this.lista = lista;
 		this.atual = lista.getPrim();
+		index = 0;
 	}
 
 	@Override
@@ -18,6 +20,7 @@ public class ListaDuplaIterator implements MeuIterator {
 		if (hasNext()) {
 			temp = atual;
 			atual = atual.getProx();
+			index++;
 		}
 		return temp;
 	}
@@ -41,15 +44,6 @@ public class ListaDuplaIterator implements MeuIterator {
 
 	@Override
 	public int nextIndex() {
-		if (this.atual.getAnt() == null) {
-			return 0;
-		}
-		int index = 0;
-		NoListaDupla tmp = lista.getPrim();
-		while (tmp.getInfo() != atual.getInfo()) {
-			index++;
-			tmp = tmp.getProx();
-		}
 		return index;
 	}
 

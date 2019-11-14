@@ -22,6 +22,7 @@ public class ListaTestDrive {
 			NoListaDupla no = iterador.next();
 			System.out.println(no);
 		}
+
 		System.out.println("Posição do Atual: "+iterador.nextIndex());
 	}
 
