@@ -58,11 +58,9 @@ public class ListaDupla {
 	@Override
 	public String toString() {
 		String s = "Lista: ";
-
 		for (NoListaDupla atual = prim; atual != null; atual = atual.getProx()) {
 			s = s + atual.toString() + " ";
 		}
-
 		return s;
 	}
 }

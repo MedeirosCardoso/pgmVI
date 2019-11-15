@@ -32,14 +32,18 @@ public class ListaDuplaIterator implements MeuIterator {
 
 	@Override
 	public NoListaDupla previous() {
-		// TODO Auto-generated method stub
-		return null;
+		NoListaDupla temp = null;
+		if (hasPrevius()) {
+			temp = atual;
+			atual = atual.getAnt();
+			index--;
+		}
+		return temp;
 	}
 
 	@Override
 	public boolean hasPrevius() {
-		// TODO Auto-generated method stub
-		return false;
+		return atual != null;
 	}
 
 	@Override
@@ -49,8 +53,7 @@ public class ListaDuplaIterator implements MeuIterator {
 
 	@Override
 	public int previousIndex() {
-		// TODO Auto-generated method stub
-		return 0;
+		return index;
 	}
 
 }
